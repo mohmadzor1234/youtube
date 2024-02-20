@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/log.css">
+    <title>يوتيوبي</title>
+    <!-- <style>
+        @media (min-width: 992px){
+     .rtl .ml-lg-3, [dir="rtl"] .ml-lg-3 {
+    margin-left: 0 !important;
+    margin-right: -0.4rem !important;
+}
+
+.rtl .ml-lg-6, [dir="rtl"] .ml-lg-3 {
+    margin-left: 0 !important;
+    margin-right: -1.2rem !important;
+}
+        }
+    </style> -->
+</head>
+
+<body class="mt-5 rtl">
+
+
+    <div class="layer"></div>
+    <div id="top-menu ">
+        <div class="index-container">
+
+            <!-- Hearder -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+                <i class="fa-solid fa-bars fa-lg" id="toggler"></i>
+              <b>
+                <a class="navbar-brand" href="index.html">
+                    يوتيوبي
+                    <span class="video-icon p-1"><i class="fas fa-play-circle"></i></span>
+                </a>
+              </b>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto mt-1">
+                        <li class="nav-item active">
+                            <a class="nav-link mr-3" href="index.html">الفيوهات المقترحة <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link ml-lg-3" href="#">المرفوعة حديثا</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">الفيوهات الرائجة</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link btn btn-info text-white d-inline-block  " href="#" tabindex="-1" aria-disabled="true"
+                                data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a>
+                        </li> -->
+
+
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button onclick="location.href='search.html';" class="btn btn-outline-info my-2 my-sm-0" type="submit">ابحث</button>
+                    </div>
+                    
+                </div>
+                <li class="fas fa-search mr-4 search-icon"></li>
+                <a class="nav-link  login " href="#" tabindex="-1" aria-disabled="true"
+                    data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a>
+            </nav>
+            <input type="search" name="" class="form-control search-input" placeholder="ابحث عن ...">
+
+            <!-- Modal -->
+            <div class="modal fade " id="loginModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">البريد الالكتروني:</label>
+                                    <input type="text" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">كلمة المرور:</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="">نسيت كلمة المرور</a>
+                            <a href="" class="mx-auto">انشاء حساب </a>
+                            <button type="button" class="btn btn-primary">دخول</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               <div id="wrap">
+                <div class="sidbar">
+                    <ul class="list-group list-group-flush pt-4 pl-0">
+                        <a class="list-group-item list-group-item-action py-3 py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                        <a class="list-group-item list-group-item-action py-3" href="#">
+                            <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                        </a>
+                    </ul>
+                </div>
+               </div>
+            </div>
+            <div class="history-page pt-5">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-3 history-right-column mb-5">
+                            <input type="search" name="" id="" placeholder="ابحث في الحقل" class="form-control border-0 my-3">
+                            <hr>
+                            <p>نوع السجل:</p>
+                            <div class="list-group list-group-flush pr-0 " id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">سجل المشاهدة</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">سجل البحث</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">التعليقات</a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">المنتدى</a>
+                              </div>
+                              <hr>
+                              <p>التاريخ:</p>
+                            <div class="list-group list-group-flush pr-0 " id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">منذ 24 ساعة</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">منذ 3 ايام</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">منذ اسبوع</a>
+                                <a class="list-group-item list-group-item-action active" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">منذ شهر</a>
+                              </div>
+                        </div>
+                        <div class="col-lg-9">
+
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col-12 ">
+                                        <div class="card video-card mb-3 ">
+                                            <div class="card-horizontal d-md-flex d-inline-block">
+                                                <div class="card-icons">
+                                                    <a href="watch.html">
+                                                        <img class="" src="img/elzero10.jpg" alt="Card image cap">
+                                                        <time>09:40</time>
+                                                        <i class="fa-solid fa-play fa-2xl"></i>
+                                                    </a>
+                                                    <i class="fa-solid fa-remove remove-icon"></i>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <a href="watch.html">
+                                                        <h4 class="card-title">Function يعني ايه</h4>
+                                                    </a>
+                                                    <p>يوجد لديك خطأ بسيط جدًا أثناء كتابة مسارات الصور، حيث أنك قمت
+                                                        بإضافة " / " قبل البدء بالمسار، وبما أن مسار مجلد الصور يوجد
+                                                        بنفس المجلد الحاوي على على صفحة search.html فأنت لست بحاجة لوضع
+                                                        إشارة " / " قبل مسار المجلد.</p>
+                                                    <small class="text-muted">
+                                                        <li class="fas fa-film"></li><span class="pl-1">14 ألف
+                                                            مشاهدة</span>
+                                                        <li class="far fa-clock"></li><span class="pl-1">قبل 4
+                                                            أيام</span>
+                                                    </small>
+                                                    <a href="channel.html" class="channel-img">
+                                                        <img src="img/elzeroicon.jpg" alt="channel-img"
+                                                            class="rounded-circle ml-3" width="30">
+                                                        <span class="card-text">elzero web school</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-12 ">
+                                        <div class="card video-card mb-3 ">
+                                            <div class="card-horizontal d-md-flex d-inline-block">
+                                                <div class="card-icons">
+                                                    <a href="watch.html">
+                                                        <img class="" src="img/elzero10.jpg" alt="Card image cap">
+                                                        <time>09:40</time>
+                                                        <i class="fa-solid fa-play fa-2xl"></i>
+                                                    </a>
+                                                    <i class="fa-solid fa-remove remove-icon"></i>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <a href="watch.html">
+                                                        <h4 class="card-title">Function يعني ايه</h4>
+                                                    </a>
+                                                    <p>يوجد لديك خطأ بسيط جدًا أثناء كتابة مسارات الصور، حيث أنك قمت
+                                                        بإضافة " / " قبل البدء بالمسار، وبما أن مسار مجلد الصور يوجد
+                                                        بنفس المجلد الحاوي على على صفحة search.html فأنت لست بحاجة لوضع
+                                                        إشارة " / " قبل مسار المجلد.</p>
+                                                    <small class="text-muted">
+                                                        <li class="fas fa-film"></li><span class="pl-1">14 ألف
+                                                            مشاهدة</span>
+                                                        <li class="far fa-clock"></li><span class="pl-1">قبل 4
+                                                            أيام</span>
+                                                    </small>
+                                                    <a href="channel.html" class="channel-img">
+                                                        <img src="img/elzeroicon.jpg" alt="channel-img"
+                                                            class="rounded-circle ml-3" width="30">
+                                                        <span class="card-text">elzero web school</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class="col-12 ">
+                                        <div class="card video-card mb-3 ">
+                                            <div class="card-horizontal d-md-flex d-inline-block">
+                                                <div class="card-icons">
+                                                    <a href="watch.html">
+                                                        <img class="" src="img/elzero10.jpg" alt="Card image cap">
+                                                        <time>09:40</time>
+                                                        <i class="fa-solid fa-play fa-2xl"></i>
+                                                    </a>
+                                                    <i class="fa-solid fa-remove remove-icon"></i>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <a href="watch.html">
+                                                        <h4 class="card-title">Function يعني ايه</h4>
+                                                    </a>
+                                                    <p>يوجد لديك خطأ بسيط جدًا أثناء كتابة مسارات الصور، حيث أنك قمت
+                                                        بإضافة " / " قبل البدء بالمسار، وبما أن مسار مجلد الصور يوجد
+                                                        بنفس المجلد الحاوي على على صفحة search.html فأنت لست بحاجة لوضع
+                                                        إشارة " / " قبل مسار المجلد.</p>
+                                                    <small class="text-muted">
+                                                        <li class="fas fa-film"></li><span class="pl-1">14 ألف
+                                                            مشاهدة</span>
+                                                        <li class="far fa-clock"></li><span class="pl-1">قبل 4
+                                                            أيام</span>
+                                                    </small>
+                                                    <a href="channel.html" class="channel-img">
+                                                        <img src="img/elzeroicon.jpg" alt="channel-img"
+                                                            class="rounded-circle ml-3" width="30">
+                                                        <span class="card-text">elzero web school</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                                               <div class="row ">
+                                    <div class="col-12 ">
+                                        <div class="card video-card mb-3 ">
+                                            <div class="card-horizontal d-md-flex d-inline-block">
+                                                <div class="card-icons">
+                                                    <a href="watch.html">
+                                                        <img class="" src="img/elzero10.jpg" alt="Card image cap">
+                                                        <time>09:40</time>
+                                                        <i class="fa-solid fa-play fa-2xl"></i>
+                                                    </a>
+                                                    <i class="fa-solid fa-remove remove-icon"></i>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <a href="watch.html">
+                                                        <h4 class="card-title">Function يعني ايه</h4>
+                                                    </a>
+                                                    <p>يوجد لديك خطأ بسيط جدًا أثناء كتابة مسارات الصور، حيث أنك قمت
+                                                        بإضافة " / " قبل البدء بالمسار، وبما أن مسار مجلد الصور يوجد
+                                                        بنفس المجلد الحاوي على على صفحة search.html فأنت لست بحاجة لوضع
+                                                        إشارة " / " قبل مسار المجلد.</p>
+                                                    <small class="text-muted">
+                                                        <li class="fas fa-film"></li><span class="pl-1">14 ألف
+                                                            مشاهدة</span>
+                                                        <li class="far fa-clock"></li><span class="pl-1">قبل 4
+                                                            أيام</span>
+                                                    </small>
+                                                    <a href="channel.html" class="channel-img">
+                                                        <img src="img/elzeroicon.jpg" alt="channel-img"
+                                                            class="rounded-circle ml-3" width="30">
+                                                        <span class="card-text">elzero web school</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-12 ">
+                                        <div class="card video-card mb-3 ">
+                                            <div class="card-horizontal d-md-flex d-inline-block">
+                                                <div class="card-icons">
+                                                    <a href="watch.html">
+                                                        <img class="" src="img/elzero10.jpg" alt="Card image cap">
+                                                        <time>09:40</time>
+                                                        <i class="fa-solid fa-play fa-2xl"></i>
+                                                    </a>
+                                                    <i class="fa-solid fa-remove remove-icon"></i>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <a href="watch.html">
+                                                        <h4 class="card-title">Function يعني ايه</h4>
+                                                    </a>
+                                                    <p>يوجد لديك خطأ بسيط جدًا أثناء كتابة مسارات الصور، حيث أنك قمت
+                                                        بإضافة " / " قبل البدء بالمسار، وبما أن مسار مجلد الصور يوجد
+                                                        بنفس المجلد الحاوي على على صفحة search.html فأنت لست بحاجة لوضع
+                                                        إشارة " / " قبل مسار المجلد.</p>
+                                                    <small class="text-muted">
+                                                        <li class="fas fa-film"></li><span class="pl-1">14 ألف
+                                                            مشاهدة</span>
+                                                        <li class="far fa-clock"></li><span class="pl-1">قبل 4
+                                                            أيام</span>
+                                                    </small>
+                                                    <a href="channel.html" class="channel-img">
+                                                        <img src="img/elzeroicon.jpg" alt="channel-img"
+                                                            class="rounded-circle ml-3" width="30">
+                                                        <span class="card-text">elzero web school</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class="col-12 ">
+                                        <div class="card video-card mb-3 ">
+                                            <div class="card-horizontal d-md-flex d-inline-block">
+                                                <div class="card-icons">
+                                                    <a href="watch.html">
+                                                        <img class="" src="img/elzero10.jpg" alt="Card image cap">
+                                                        <time>09:40</time>
+                                                        <i class="fa-solid fa-play fa-2xl"></i>
+                                                    </a>
+                                                    <i class="fa-solid fa-remove remove-icon"></i>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <a href="watch.html">
+                                                        <h4 class="card-title">Function يعني ايه</h4>
+                                                    </a>
+                                                    <p>يوجد لديك خطأ بسيط جدًا أثناء كتابة مسارات الصور، حيث أنك قمت
+                                                        بإضافة " / " قبل البدء بالمسار، وبما أن مسار مجلد الصور يوجد
+                                                        بنفس المجلد الحاوي على على صفحة search.html فأنت لست بحاجة لوضع
+                                                        إشارة " / " قبل مسار المجلد.</p>
+                                                    <small class="text-muted">
+                                                        <li class="fas fa-film"></li><span class="pl-1">14 ألف
+                                                            مشاهدة</span>
+                                                        <li class="far fa-clock"></li><span class="pl-1">قبل 4
+                                                            أيام</span>
+                                                    </small>
+                                                    <a href="channel.html" class="channel-img">
+                                                        <img src="img/elzeroicon.jpg" alt="channel-img"
+                                                            class="rounded-circle ml-3" width="30">
+                                                        <span class="card-text">elzero web school</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class="col-12 ">
+                                        <div class="card video-card mb-3 ">
+                                            <div class="card-horizontal d-md-flex d-inline-block">
+                                                <div class="card-icons">
+                                                    <a href="watch.html">
+                                                        <img class="" src="img/elzero10.jpg" alt="Card image cap">
+                                                        <time>09:40</time>
+                                                        <i class="fa-solid fa-play fa-2xl"></i>
+                                                    </a>
+                                                    <i class="fa-solid fa-remove remove-icon"></i>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <a href="watch.html">
+                                                        <h4 class="card-title">Function يعني ايه</h4>
+                                                    </a>
+                                                    <p>يوجد لديك خطأ بسيط جدًا أثناء كتابة مسارات الصور، حيث أنك قمت
+                                                        بإضافة " / " قبل البدء بالمسار، وبما أن مسار مجلد الصور يوجد
+                                                        بنفس المجلد الحاوي على على صفحة search.html فأنت لست بحاجة لوضع
+                                                        إشارة " / " قبل مسار المجلد.</p>
+                                                    <small class="text-muted">
+                                                        <li class="fas fa-film"></li><span class="pl-1">14 ألف
+                                                            مشاهدة</span>
+                                                        <li class="far fa-clock"></li><span class="pl-1">قبل 4
+                                                            أيام</span>
+                                                    </small>
+                                                    <a href="channel.html" class="channel-img">
+                                                        <img src="img/elzeroicon.jpg" alt="channel-img"
+                                                            class="rounded-circle ml-3" width="30">
+                                                        <span class="card-text">elzero web school</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class="col-12 ">
+                                        <div class="card video-card mb-3 ">
+                                            <div class="card-horizontal d-md-flex d-inline-block">
+                                                <div class="card-icons">
+                                                    <a href="watch.html">
+                                                        <img class="" src="img/elzero10.jpg" alt="Card image cap">
+                                                        <time>09:40</time>
+                                                        <i class="fa-solid fa-play fa-2xl"></i>
+                                                    </a>
+                                                    <i class="fa-solid fa-remove remove-icon"></i>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <a href="watch.html">
+                                                        <h4 class="card-title">Function يعني ايه</h4>
+                                                    </a>
+                                                    <p>يوجد لديك خطأ بسيط جدًا أثناء كتابة مسارات الصور، حيث أنك قمت
+                                                        بإضافة " / " قبل البدء بالمسار، وبما أن مسار مجلد الصور يوجد
+                                                        بنفس المجلد الحاوي على على صفحة search.html فأنت لست بحاجة لوضع
+                                                        إشارة " / " قبل مسار المجلد.</p>
+                                                    <small class="text-muted">
+                                                        <li class="fas fa-film"></li><span class="pl-1">14 ألف
+                                                            مشاهدة</span>
+                                                        <li class="far fa-clock"></li><span class="pl-1">قبل 4
+                                                            أيام</span>
+                                                    </small>
+                                                    <a href="channel.html" class="channel-img">
+                                                        <img src="img/elzeroicon.jpg" alt="channel-img"
+                                                            class="rounded-circle ml-3" width="30">
+                                                        <span class="card-text">elzero web school</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f1db66a373.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/log.js"></script>
+</body>
+
+</html>
